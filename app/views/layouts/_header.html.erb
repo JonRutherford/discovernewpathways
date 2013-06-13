@@ -1,0 +1,15 @@
+<header class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+	  <%= link_to root_url do %>
+	    <%= image_tag("dnp.jpg", alt: "Discover New Pathways", class: "banner") %>
+	  <% end %>
+
+
+	  <% @Pages = Page.in_menu %>
+      <% @Pages.in_menu.each do |p| %>
+	    <li><a>p.title</a></li>
+	  <%end%>
+	</div>
+  </div>
+</header>
