@@ -1,12 +1,26 @@
 @import "bootstrap";
 
-.banner {
+$grayMediumLight: #eaeaea;
+
+#logo {
   float: left;
   width: 345px;
   height: 92px;
-  background: url(images/logo-main.png) no-repeat 0 50%;
-  text-indent: -9999px;
+  margin-right: 10px;
+  padding-top: 9px;
+  // background: url(images/logo-main.png) no-repeat 0 50%;
+  // text-indent: -9999px;
   overflow: hidden;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  small { 
+    float: left; 
+  }
 }
 
 // body {

@@ -1,18 +1,18 @@
-<header id="header" class="navbar">
+<header class="navbar navbar-static-top">
   <div class="navbar-inner">
     <div class="container">
-      <h1 id='logo'>
-        <%= link_to refinery.root_path do %>
-          <%= image_tag("dnp.jpg", alt: Refinery::Core.site_name, class: "banner") %>
-        <% end %>
-      </h1>
-      <%= render partial: '/refinery/menu', locals: { roots: refinery_menu('top_menu'), 
-      												  css: "pull-right" } %>
+      <%= link_to refinery.root_path, id: "logo" do %>
+        <%= image_tag "dnp.jpg", alt: Refinery::Core.site_name  %>
+      <% end %>
+	  <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("top_menu"), 
+	  												  css: "pull-right" } %>
     </div>
   </div>
   <div class="navbar-inner">
     <div class="container">
-      <%= render partial: '/refinery/menu', locals: { roots: refinery_menu('page_menu') } %>
+      <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("page_menu") } %>
     </div>
   </div>
 </header>
+
+
