@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "1.9.2"
+ruby "1.9.3"
 
 gem 'rails', '3.2.13'
 
@@ -34,11 +34,6 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '>= 1.0.3'
-end
-
-group :development do
-  gem 'taps'
-  # gem 'sqlite3'
 end
 
 
