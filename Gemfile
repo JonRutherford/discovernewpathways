@@ -12,10 +12,10 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
-gem 'refinerycms-menus', '~> 2.0.7'
 
 # Refinery CMS
 gem 'refinerycms'
+gem 'refinerycms-menus', '~> 2.0.7'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 # gem 'refinerycms-i18n',   '~> #{VERSION_BAND}'

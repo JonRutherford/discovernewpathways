@@ -1,5 +1,6 @@
 # encoding: utf-8
 Refinery::Images.configure do |config|
+
   # Configures the maximum allowed upload size (in bytes) for an image
   # config.max_image_size = 5242880
 

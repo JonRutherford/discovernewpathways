@@ -1,6 +1,7 @@
 @import "bootstrap";
 
 $grayMediumLight: #eaeaea;
+// $grayDark: #555;
 
 #logo {
   float: left;
@@ -13,6 +14,15 @@ $grayMediumLight: #eaeaea;
   overflow: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-family: 'Montserrat, sans-serif'
+}
+
+p {
+  color: $gray;
+}
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
@@ -21,6 +31,16 @@ footer {
   small { 
     float: left; 
   }
+}
+
+// Menus
+
+#top_menu {
+
+}
+
+#page_menu {
+  
 }
 
 // body {
