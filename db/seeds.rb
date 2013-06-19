@@ -10,3 +10,6 @@
 Refinery::Pages::Engine.load_seed
 # Added by Refinery CMS Page Menus extension
 Refinery::Menus::Engine.load_seed
+
+# Added by RefineryCMS Copywriting engine
+Refinery::Copywriting::Engine.load_seed

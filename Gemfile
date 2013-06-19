@@ -15,7 +15,9 @@ gem 'bootstrap-sass'
 
 # Refinery CMS
 gem 'refinerycms'
+gem 'refinerycms-i18n'
 gem 'refinerycms-menus', '~> 2.0.7'
+gem 'refinerycms-copywriting'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 # gem 'refinerycms-i18n',   '~> #{VERSION_BAND}'

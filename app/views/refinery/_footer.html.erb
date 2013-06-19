@@ -2,7 +2,7 @@
   <div class="container">
   	<div class="offset4 span8">      
       <small>
-        <%= t('.copyright', year: Time.now.year, site_name: Refinery::Core.site_name) %>
+        <%= t('.copyright', year: Time.now.year, site_name: copywriting('company name', { scope: 'footer' })) %>
 	  </small>
 	</div> 
   </div>
