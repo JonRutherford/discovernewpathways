@@ -3,18 +3,18 @@
     <div class="navbar navbar-static-top">
       <div id="top_menu" class="navbar-inner">
         <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <!-- <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
+          </button> -->
           <%= link_to refinery.root_path, class: "brand" do %>
             <span id="logo">Discover New Pathways</span>
           <% end %>
-          <div class="nav-collapse collapse">
+          <!-- <div class="nav-collapse collapse"> -->
             <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("top_menu"), 
                                                             css: "pull-right" } %>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
