@@ -1,0 +1,122 @@
+// $navbarCollapseWidth: 479px;
+@import "bootstrap";
+@import "bootstrap-responsive";
+$grayMediumLight: #eaeaea;
+
+html {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+// section {
+//   overflow: auto;
+// }
+
+textarea {
+  resize: vertical;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-family: 'Montserrat, sans-serif'
+}
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  @include box-sizing(border-box);
+}
+
+input {
+  height: auto !important;
+}
+
+#logo {
+  // float: left;
+  // width: 345px;
+  // height: 92px;
+  // margin-right: 10px;
+  // padding-top: 9px;
+  // // background: url(images/logo-main.png) no-repeat 0 50%;
+  // // text-indent: -9999px;
+  // overflow: hidden;
+  text-indent:-10000px;
+
+  @media (min-width: 768px) {
+    background: image-url("LogoDesktop.png") no-repeat; 
+    width: 500px; 
+    height: 133px;
+  }
+
+  @media (max-width: 767px) {
+    background: image-url("LogoTablet.png") no-repeat; 
+    width: 330px; 
+    height: 89px;
+  }
+
+  @media (max-width: 480px) {
+    background: image-url("LogoMobile.png") no-repeat; 
+    width: 260px; 
+    height: 70px;
+  }
+}
+
+// @media (max-width: 560px) {
+//   #page_menu {
+//     li {
+//       display: block;
+//       clear: both;
+//       float: none;
+//     }
+//   }
+// }
+
+p {
+  color: $gray;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  small { 
+    float: left; 
+  }
+}
+
+#banner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#social_networks {
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+}
+
+#map_container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+#map_dummy {
+    padding-top: 75%; /* 4:3 aspect ratio */
+}
+
+#map_canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}

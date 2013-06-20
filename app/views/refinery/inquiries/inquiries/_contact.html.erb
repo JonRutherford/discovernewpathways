@@ -1,0 +1,37 @@
+<% copywriting_options(page: @page, phrase_type: "string") do %>
+  
+  <div id="social_networks">
+    <%= link_to "skype:#{copywriting('Skype Name')}?call", id: "skype_icon" do %>
+      <%= image_tag "skype32.ico", alt: "Skype"%>
+    <% end %>
+
+    <%= link_to "https://twitter.com/#{copywriting('Twitter Name')}", id: "skype_icon" do %>
+  	<%= image_tag "twitter32.ico", alt: "Twitter"%>
+    <% end %>
+
+    <%= link_to "http://#{copywriting('LinkedIn URL')}", id: "skype_icon" do %>
+      <%= image_tag "linkedin32.ico", alt: "LinkedIn"%>
+    <% end %>
+  </div>
+
+  <div>
+    Business Phone: <%= copywriting('Business Phone', { page: @page, phrase_type: "string"}) %>
+  </div>
+
+
+  Mobile Phone
+
+	
+  <div>
+    <%= copywriting('Address 1') %>
+    <%= copywriting('Address 2') %>
+    <%= copywriting('Address 3') %>
+  </div>
+
+  <div id="map_container">
+    <div id="map_dummy"></div>
+    <div id="map_canvas"></div>
+  </div>
+
+
+<% end %>

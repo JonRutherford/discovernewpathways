@@ -11,13 +11,15 @@ gem 'pg'
 gem 'execjs'
 gem 'therubyracer'
 gem 'jquery-rails'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 2.3.2.0'
+# gem 'bootstrap-generators', '~> 2.3'
 
 # Refinery CMS
 gem 'refinerycms'
 gem 'refinerycms-i18n'
 gem 'refinerycms-menus', '~> 2.0.7'
 gem 'refinerycms-copywriting'
+gem 'refinerycms-inquiries', '~> 2.0.0'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 # gem 'refinerycms-i18n',   '~> #{VERSION_BAND}'
@@ -36,6 +38,10 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
+  gem "rspec-rails"
 end
 
 
