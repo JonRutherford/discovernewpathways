@@ -2,26 +2,32 @@
   <div id="banner">
     <div class="navbar navbar-static-top">
       <div id="top_menu" class="navbar-inner">
-        <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span>Menu</span>
+        <div class="container">
+          <!-- <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span>Menu</span> -->
             <!-- <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span> -->
-          </button>
+          <!-- </button> -->
+          
+          <!-- <div class="nav-collapse collapse"> -->
+            <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("top_menu"), 
+                                                            css: "pull-right" } %>
+          <!-- </div> -->
+
           <%= link_to refinery.root_path, class: "brand" do %>
             <span id="logo">Discover New Pathways</span>
           <% end %>
-          <div class="nav-collapse collapse">
-            <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("top_menu"), 
-                                                            css: "pull-right" } %>
-          </div>
+
+
         </div>
       </div>
     </div>
     <div class="navbar navbar-inverse navbar-static-top">
       <div id="page_menu" class="navbar-inner">
-        <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("page_menu") } %>
+        <div class="container">
+          <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("page_menu") } %>
+        </div>
       </div>
     </div>
   </div>
