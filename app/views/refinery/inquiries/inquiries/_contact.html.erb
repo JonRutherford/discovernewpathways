@@ -29,6 +29,9 @@
   </div>
 
   <div id="map_container">
+    <% content_for :head do %>
+      <%= render "gmap" %>
+    <% end %>
     <div id="map_dummy"></div>
     <div id="map_canvas"></div>
   </div>
