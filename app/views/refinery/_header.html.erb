@@ -1,37 +1,31 @@
 <header>
   <div class="navbar navbar-static-top">
     <div id="top_menu" class="navbar-inner">
-      <div class="container">
-        <div class="row">
-          <!-- <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span>Menu</span> -->
-            <!-- <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> -->
-          <!-- </button> -->
-          
-          <!-- <div class="nav-collapse collapse"> -->
-          <div class="span6">
-            <%= link_to refinery.root_path, class: "brand" do %>
-              <%= image_tag "LogoDesktop.png", { id: "logo", alt: "Discover New Pathways" } %>
-            <% end %>
-          </div>
-          <div class="span6">
-            <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("top_menu"), 
-                                                            css: "pull-right" } %>
-          </div>
+      <div class="container">  
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <strong>Menu</strong>
+        </a>
+        <%= link_to refinery.root_path, class: "brand" do %>
+          <%= image_tag "LogoTablet.png", { id: "logo", alt: "Discover New Pathways" } %>
+        <% end %>
+        <div class="nav-collapse collapse">        
+          <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("top_menu"), 
+                                                          css: "pull-right" } %>
         </div>
       </div>
-      <!-- </div> -->
     </div>
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div id="page_menu" class="navbar-inner">
-        <div class="container">
-          <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("page_menu") } %>
-        </div>
+    <div class="nav-collapse collapse">
+      <div class="container">
+        <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("page_menu"),
+                                                        css: "nav-pills" } %>
       </div>
     </div>
   </div>
+    <!-- <div class="navbar navbar-inverse navbar-static-top"> -->
+      <!-- <div id="page_menu" class="navbar-inner"> -->
+    <!-- </div> -->
+  
 </header>
 
 
+<ul class="nav nav-tabs">

@@ -7,7 +7,9 @@
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     <%= render '/refinery/header' -%>
     <section id="page">
-      <%= yield %>
+      <div class="container">
+        <%= yield %>
+      </div>
     </section>
     <%= render '/refinery/footer' -%>
     <%= render '/refinery/javascripts' %>

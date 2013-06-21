@@ -1,5 +1,5 @@
 @import "bootstrap";
-// @import "bootstrap-responsive";
+@import "bootstrap-responsive";
 $grayMediumLight: #eaeaea;
 
 html {
@@ -36,9 +36,13 @@ input {
   height: auto !important;
 }
 
+ul {
+  @include box-sizing(border-box);
+}
+
 #logo {
   // float: left;
-  // display: inline-block;
+  display: inline-block;
   // overflow: auto;
   // width: 345px;
   // height: 92px;
@@ -47,7 +51,7 @@ input {
   // // background: url(images/logo-main.png) no-repeat 0 50%;
   // overflow: hidden;
   // text-indent:-10000px;
-  max-width: 66%;
+  max-width: 100%;
 
   // @media (min-width: 768px) {
   //   background: image-url("LogoDesktop.png") no-repeat; 
@@ -68,9 +72,16 @@ input {
   // }
 }
 
+.nav-tabs {
+  @media (max-width: 767px) {
+    
+  }
+}
+
 .navbar .nav > li > a {
-  padding-left: 0px;
-  padding-right: 15px;
+  // padding-left: 0px;
+  // padding-right: 15px;
+  @include box-sizing(border-box);
 }
 
 #page {
