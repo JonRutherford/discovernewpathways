@@ -8,7 +8,7 @@ gem 'pg'
 gem 'execjs'
 gem 'therubyracer'
 gem 'jquery-rails'
-# gem 'bootstrap-sass'
+gem 'bootstrap-sass'
 # gem 'bootstrap-generators', '~> 2.3'
 # gem 'skeleton-rails'
 
@@ -32,7 +32,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
-  gem 'bootstrap-sass-rails'
+  # gem 'bootstrap-sass-rails'
   # gem 'zurb-foundation'
 end
 
