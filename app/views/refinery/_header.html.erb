@@ -1,8 +1,8 @@
 <header>
-  <div id="banner">
-    <div class="navbar navbar-static-top">
-      <div id="top_menu" class="navbar-inner">
-        <div class="container">
+  <div class="navbar navbar-static-top">
+    <div id="top_menu" class="navbar-inner">
+      <div class="container">
+        <div class="row">
           <!-- <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span>Menu</span> -->
             <!-- <span class="icon-bar"></span>
@@ -11,17 +11,18 @@
           <!-- </button> -->
           
           <!-- <div class="nav-collapse collapse"> -->
+          <div class="span6">
+            <%= link_to refinery.root_path, class: "brand" do %>
+              <%= image_tag "LogoDesktop.png", { id: "logo", alt: "Discover New Pathways" } %>
+            <% end %>
+          </div>
+          <div class="span6">
             <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("top_menu"), 
                                                             css: "pull-right" } %>
-          <!-- </div> -->
-
-          <%= link_to refinery.root_path, class: "brand" do %>
-            <span id="logo">Discover New Pathways</span>
-          <% end %>
-
-
+          </div>
         </div>
       </div>
+      <!-- </div> -->
     </div>
     <div class="navbar navbar-inverse navbar-static-top">
       <div id="page_menu" class="navbar-inner">
