@@ -1,5 +1,6 @@
 <%
   if !!local_assigns[:apply_css] and (classes = menu_branch_css(local_assigns)).any?
+    classes << "active" if refinery.url_for(@page.url) == refinery.url_for(menu_branch.url)
     css = "class='#{classes.join(' ')}'".html_safe
   end
 -%>
