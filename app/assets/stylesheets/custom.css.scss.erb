@@ -1,3 +1,6 @@
+$gridColumnWidth1200: 60px;
+$gridGutterWidth1200: 20px;
+
 @import "bootstrap";
 @import "bootstrap-responsive";
 $grayMediumLight: #eaeaea;
@@ -19,11 +22,6 @@ textarea {
   resize: vertical;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-  font-family: 'Montserrat, sans-serif'
-}
-
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
@@ -40,17 +38,36 @@ ul {
   @include box-sizing(border-box);
 }
 
+// h1, h2, h3, h4, h5, h6 {
+//   line-height: 1;
+//   font-family: 'Montserrat, sans-serif'
+// }
+
+body { 
+  // Portrait tablet to landscape and desktop
+  @media (min-width: 980px) {
+    font-size: 120%;
+  }
+
+  // Portrait tablet to landscape and desktop
+  @media screen and (min-width: 768px) and (max-width: 979px) {
+    font-size: 115%;
+  }
+
+  // Landscape phone to portrait tablet
+  @media screen and (max-width: 767px) {
+    font-size: 110%;
+  }
+
+  //  Landscape phones and down
+  @media screen and (max-width: 480px) {
+    font-size: 100%;
+  }
+}
+
 #logo {
   // float: left;
   display: inline-block;
-  // overflow: auto;
-  // width: 345px;
-  // height: 92px;
-  // margin-right: 10px;
-  // padding-top: 9px;
-  // // background: url(images/logo-main.png) no-repeat 0 50%;
-  // overflow: hidden;
-  // text-indent:-10000px;
   max-width: 100%;
 
   // @media (min-width: 768px) {
@@ -71,38 +88,6 @@ ul {
   //   // height: 50%;
   // }
 }
-
-// @media (max-width: $navbarCollapseWidth) {
-//   .container {
-//     // width: auto;
-//     // padding: 0;
-  // }
-
-//   #page {
-//     // padding-left: 20px;
-//     // padding-right: 20px;
-//     @include box-sizing(border-box);
-//   }
-// }
-
-
-.navbar .nav > li > a {
-  // border: 1px solid $grayMediumLight;
-  // margin-left: 0px;
-  // padding-left: 0px;
-  // padding-right: 20px;
-  // @include box-sizing(border-box);
-  // &last {
-
-  // }
-}
-
-// #main_nav {
-//   background: url(Banner.jpg) no-repeat;
-//   background-size: auto;
-//   background-origin: padding-box;
-//   background-clip: border-box;
-// }
 
 #page {
   padding-top: 20px;
