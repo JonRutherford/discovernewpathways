@@ -6,7 +6,8 @@
           <strong>Menu</strong>
         </button>
         <%= link_to refinery.root_path, class: "brand" do %>
-          <%= image_tag "LogoMobile.png", { id: "logo", alt: "Discover New Pathways" } %>
+          <%= image_tag "LogoTablet.png", { id: "logo", alt: "Discover New Pathways" } %>
+          <!-- <img id="logo", alt: "<%= copywriting('company name', { scope: 'site' }) %>" /> -->
         <% end %>
         <div class="nav-collapse collapse">        
           <%= render partial: "/refinery/menu", locals: { roots: refinery_menu("top_menu"), 
