@@ -94,4 +94,3 @@ vendor/extensions/**/spec/dummy
 
 # Unicorn development server files
 .env
-Procfile

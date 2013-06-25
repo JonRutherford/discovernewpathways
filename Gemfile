@@ -10,6 +10,8 @@ gem 'therubyracer'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'unicorn'
+gem 'newrelic_rpm'
+gem 'rack-timeout'
 
 # Refinery CMS
 gem 'refinerycms'
