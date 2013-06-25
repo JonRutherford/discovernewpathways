@@ -9,8 +9,7 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
-# gem 'bootstrap-generators', '~> 2.3'
-# gem 'skeleton-rails'
+gem 'unicorn'
 
 # Refinery CMS
 gem 'refinerycms'
