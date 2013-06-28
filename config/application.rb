@@ -66,5 +66,7 @@ module DiscoverNewPathways
     config.assets.version = '1.0'
 
     config.assets.initialize_on_precompile = true
+
+    config.action_mailer.default_url_options = { host: 'discovernewpathways.com' }
   end
 end
