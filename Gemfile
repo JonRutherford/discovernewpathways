@@ -1,17 +1,24 @@
 source 'https://rubygems.org'
 
 ruby "1.9.3"
-
 gem 'rails', '3.2.13'
 
+# DB
 gem 'pg'
+
+# JS/CSS
 gem 'execjs'
 gem 'therubyracer'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
+
+# Server & monitoring
 gem 'unicorn'
 gem 'newrelic_rpm'
 gem 'rack-timeout'
+
+# SEO
+gem 'rack-canonical-host'
 
 # Refinery CMS
 gem 'refinerycms'
@@ -33,8 +40,6 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
-  # gem 'bootstrap-sass-rails'
-  # gem 'zurb-foundation'
 end
 
 group :development do
@@ -47,9 +52,6 @@ end
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
