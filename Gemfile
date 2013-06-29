@@ -28,9 +28,7 @@ gem 'refinerycms-copywriting'
 gem 'refinerycms-inquiries', '~> 2.0.0'
 
 # Specify additional Refinery CMS Extensions here (all optional):
-# gem 'refinerycms-i18n',   '~> #{VERSION_BAND}'
 #  gem 'refinerycms-blog', '~> #{VERSION_BAND}'
-#  gem 'refinerycms-inquiries', '~> #{VERSION_BAND}'
 #  gem 'refinerycms-search', '~> #{VERSION_BAND}'
 #  gem 'refinerycms-page-images', '~> #{VERSION_BAND}'
 
