@@ -11,6 +11,7 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
+gem 'bootswatch-rails'
 
 # Server & monitoring
 gem 'unicorn'
