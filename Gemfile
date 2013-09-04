@@ -27,6 +27,9 @@ gem 'refinerycms-i18n'
 gem 'refinerycms-menus', '~> 2.0.7'
 gem 'refinerycms-copywriting'
 gem 'refinerycms-inquiries', '~> 2.0.0'
+group :production do
+  gem 'fog' # required for S3
+end
 
 # Specify additional Refinery CMS Extensions here (all optional):
 #  gem 'refinerycms-blog', '~> #{VERSION_BAND}'

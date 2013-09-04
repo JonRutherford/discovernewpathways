@@ -74,4 +74,7 @@ DiscoverNewPathways::Application.configure do
     authentication:       'plain',
     enable_starttls_auto: true  
   }
+
+  # Explicitly tell Refinery to use S3 for image storage
+  Refinery::Core.config.s3_backend = true
 end

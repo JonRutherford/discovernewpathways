@@ -44,4 +44,7 @@ DiscoverNewPathways::Application.configure do
     authentication:       'plain',
     enable_starttls_auto: true  
   }
+
+  # Disable S3 storage for dev
+  Refinery::Core.config.s3_backend = false
 end
