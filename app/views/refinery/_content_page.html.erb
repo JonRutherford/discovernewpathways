@@ -16,4 +16,5 @@
         :can_use_fallback => !local_assigns[:show_empty_sections] && !local_assigns[:remove_automatic_sections]
       }) %>
 <% end %>
+
 <%= render '/refinery/draft_page_message' unless @page.nil? or @page.live? -%>

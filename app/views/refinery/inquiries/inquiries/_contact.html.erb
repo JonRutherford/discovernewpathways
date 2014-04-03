@@ -14,27 +14,21 @@
     <% end %>
   </div> -->
 
-  <div>
+  <p>
     Business Phone: <%= copywriting('Business Phone', { page: @page, phrase_type: "string"}) %>
-  </div>
+  </p>
 
-  <div>
+  <p>
     Mobile Phone: <%= copywriting('Mobile Phone', { page: @page, phrase_type: "string"}) %>
-  </div>
+  </p>
 	
-  <div>
+  <p>
     <%= copywriting('Address 1') %>
     <%= copywriting('Address 2') %>
     <%= copywriting('Address 3') %>
-  </div>
+  </p>
 
   <div id="map_container">
-    <% content_for :head do %>
-      <%= render "gmap" %>
-    <% end %>
-    <div id="map_dummy"></div>
-    <div id="map_canvas"></div>
+    <%= raw @page.content_for(:map_section) %>
   </div>
-
-
 <% end %>
