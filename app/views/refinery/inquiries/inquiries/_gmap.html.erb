@@ -18,13 +18,7 @@
     };
     var marker = new google.maps.Marker(markerOptions);
 
-    var infoOptions = {
-      content: "<h4>Discover New Pathways</h4>" +
-                "<h5>Glen Rutherford<h5>" +
-                "<p>16 Mawson St</p>" +
-                "<p>St Ives, NSW</p>" +
-                "<p>Sydney, Australia</p>"
-    };
+    var infoOptions = {}
     var infoWindow = new google.maps.InfoWindow(infoOptions);
     infoWindow.open(map, marker);
   }
